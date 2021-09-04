@@ -5,6 +5,8 @@
 
 ### Project description:
 
+**You will need to implement this project using Symfony!**
+
 * A global event management company needs a web application to track events. They would need to have a list of all their events with the following data:
 
 * Event’s name
@@ -26,10 +28,6 @@
 * Event’s URL
 
 * Event’s Type (predefined list like “music”, “sport”, “movie”, “theater” etc.). Note: This is related to the bonus points, not necessary for the basic grading.
-
-
-**You will need to implement this project using Symfony!**
-
  
 
 ### For this CodeReview, the following criteria will be graded:
