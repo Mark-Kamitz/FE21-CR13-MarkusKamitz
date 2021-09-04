@@ -1,0 +1,46 @@
+
+build a symfony project:
+composer create-project symfony/website-skeleton my_project_name
+cd my_project_name
+
+start symfony:
+php -S localhost:8000 -t public
+
+open in browser:
+http://localhost:8000/ 
+
+make a controller:
+php bin/console make:controller
+
+
+in .env : 
+DATABASE_URL="mysql://root:@127.0.0.1:3306/my_project" 
+
+create database
+php bin/console doctrine:database:create
+
+create table:
+php bin/console make:entity
+
+make migration:
+php bin/console make:migration
+
+add tables to the database:
+php bin/console doctrine:migrations:migrate
+
+
+filter:
+$events = $this->getDoctrine()->getRepository(Events::class)->findBy(['type' => $filter]);
+
+date styling:
+<div>
+    <p> Date: {{event.dateTime | date('d/m/Y ')}} </p>
+    <p> Time: {{event.dateTime | date('H:i')}} </p>
+</div>
+
+delete confirmation:
+onclick="return confirm('Are you sure you want to delete this?')"
+
+
+
+
